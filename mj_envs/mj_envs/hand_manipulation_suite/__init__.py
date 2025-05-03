@@ -15,7 +15,7 @@ register(
     entry_point='mj_envs.hand_manipulation_suite:DoorEnvSparseV0',
     max_episode_steps=200,
 )
-from mj_envs.hand_manipulation_suite.door_v0 import DoorEnvSparseV0
+from mj_envs.hand_manipulation_suite.door_v0_sparse import DoorEnvSparseV0
 
 # Hammer a nail into the board
 register(
@@ -31,7 +31,7 @@ register(
     entry_point='mj_envs.hand_manipulation_suite:HammerEnvSparseV0',
     max_episode_steps=200,
 )
-from mj_envs.hand_manipulation_suite.hammer_v0 import HammerEnvSparseV0
+from mj_envs.hand_manipulation_suite.hammer_v0_sparse import HammerEnvSparseV0
 
 # Reposition a pen in hand
 register(
@@ -47,7 +47,7 @@ register(
     entry_point='mj_envs.hand_manipulation_suite:PenEnvSparseV0',
     max_episode_steps=100,
 )
-from mj_envs.hand_manipulation_suite.pen_v0 import PenEnvSparseV0
+from mj_envs.hand_manipulation_suite.pen_v0_sparse import PenEnvSparseV0
 
 # Relcoate an object to the target
 register(
@@ -63,4 +63,4 @@ register(
     entry_point='mj_envs.hand_manipulation_suite:RelocateEnvSparseV0',
     max_episode_steps=200,
 )
-from mj_envs.hand_manipulation_suite.relocate_v0 import RelocateEnvSparseV0
+from mj_envs.hand_manipulation_suite.relocate_v0_sparse import RelocateEnvSparseV0
