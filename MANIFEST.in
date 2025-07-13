@@ -1,2 +1,2 @@
-recursive-include mj_envs
-recursive-include mjrl
+recursive-include mj_envs/mj_envs/hand_manipulation_suite/assets *
+recursive-include mjrl/mjrl/envs/assets *
