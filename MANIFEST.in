@@ -1,6 +1,5 @@
 graft mjrl
 graft mj_envs
-graft mj_envs/dependencies/Adroit
 global-exclude __pycache__
 global-exclude *.egg-info
 prune .egg-info
