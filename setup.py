@@ -19,7 +19,7 @@ setup(
     version='1.0.0',
     packages=find_packages(include=['mjrl', 'mj_envs*']),
     package_dir={
-        'mj_envs': 'mj_envs/mj_envs'
+        'mj_envs': 'mj_envs/mj_envs',
         'mjrl': 'mjrl/mjrl'
     },
     description='RL algorithm for environments in MuJoCo',
