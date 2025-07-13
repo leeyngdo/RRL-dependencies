@@ -1,6 +1,5 @@
 graft mjrl
 graft mj_envs
 global-exclude __pycache__
-global-exclude *.egg-info
-prune .egg-info
+prune *.egg-info
 prune */__pycache__ 
