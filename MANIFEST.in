@@ -1,5 +1,5 @@
 graft mjrl
 graft mj_envs
-include mj_envs/dependencies/Adroit/*
+graft mj_envs/dependencies/Adroit
 global-exclude *.egg-info
 prune .egg-info
