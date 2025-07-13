@@ -5,7 +5,7 @@ import os
 import sys
 from setuptools import setup, find_packages
 
-print("Installing RRL. \n Package intended for use with provided conda env. See setup instructions here:")
+print("Installing RRL-dependencies. \n Package intended for use with provided conda env. See setup instructions here:")
 
 if sys.version_info.major != 3:
     print("This Python is only compatible with Python 3, but you are running "
@@ -15,10 +15,18 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name='RRL',
+    name='RRL-dependencies',
     version='1.0.0',
-    packages=find_packages(),
+    packages=find_packages() + find_packages('mjrl') + find_packages('mj_envs'),
+    package_dir={
+        'mjrl': 'mjrl/mjrl',
+        'mj_envs': 'mj_envs/mj_envs'
+    },
     description='RL algorithm for environments in MuJoCo',
     author='Rutav Shah (Modified by Youngdo Lee)',
     author_email='lyd0531@kaist.ac.kr',
+    install_requires=[
+        'click',
+        'termcolor',
+    ],
 )
