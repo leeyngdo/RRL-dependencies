@@ -17,7 +17,7 @@ def read(fname):
 setup(
     name='RRL',
     version='1.0.0',
-    packages=find_packages(include=['mjrl', 'mj_envs']),
+    packages=find_packages(include=['mjrl*', 'mj_envs*']),
     package_dir={
         'mj_envs': 'mj_envs/mj_envs',
         'mjrl': 'mjrl/mjrl'
