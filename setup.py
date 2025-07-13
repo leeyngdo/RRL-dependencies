@@ -23,7 +23,6 @@ setup(
         'mjrl': 'mjrl/mjrl',
         'mj_envs': 'mj_envs/mj_envs',
     },
-    package_data={'mj_envs': ['../dependencies/Adroit/**']},
     include_package_data=True,
     description='RL algorithm for environments in MuJoCo',
     author='Rutav Shah (Modified by Youngdo Lee)',
