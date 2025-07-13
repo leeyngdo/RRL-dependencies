@@ -17,7 +17,7 @@ def read(fname):
 setup(
     name='RRL-dependencies',
     version='1.0.0',
-    packages=find_packages() + ['mjrl'] + find_packages(where='mj_envs'),
+    packages=find_packages() + find_packages(where='mjrl') + find_packages(where='mj_envs'),
     package_dir={
         '': '.',
         'mjrl': 'mjrl/mjrl',
