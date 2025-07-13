@@ -17,10 +17,11 @@ def read(fname):
 setup(
     name='RRL-dependencies',
     version='1.0.0',
-    packages=find_packages() + find_packages('mjrl') + find_packages('mj_envs'),
+    packages=find_packages() + ['mjrl'] + find_packages(where='mj_envs'),
     package_dir={
+        '': '.',
         'mjrl': 'mjrl/mjrl',
-        'mj_envs': 'mj_envs/mj_envs'
+        'mj_envs': 'mj_envs/mj_envs',
     },
     description='RL algorithm for environments in MuJoCo',
     author='Rutav Shah (Modified by Youngdo Lee)',
