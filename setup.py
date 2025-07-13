@@ -23,6 +23,8 @@ setup(
         'mjrl': 'mjrl/mjrl',
         'mj_envs': 'mj_envs/mj_envs',
     },
+    package_data={'mj_envs': ['../dependencies/Adroit/**']},
+    include_package_data=True,
     description='RL algorithm for environments in MuJoCo',
     author='Rutav Shah (Modified by Youngdo Lee)',
     author_email='lyd0531@kaist.ac.kr',
@@ -30,7 +32,5 @@ setup(
         'click',
         'termcolor',
     ],
-    include_package_data=True,
     zip_safe=False,
-    package_data={'mj_envs': ['../dependencies/Adroit/**']},
 )
