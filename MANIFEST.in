@@ -1,4 +1,2 @@
 graft mjrl
 graft mj_envs
-global-exclude *.egg-info
-prune .egg-info
