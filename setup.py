@@ -15,7 +15,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name='RRL',
+    name='adroit',
     version='1.0.0',
     packages=find_packages(),
     description='RL algorithm for environments in MuJoCo',
